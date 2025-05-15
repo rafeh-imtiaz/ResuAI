@@ -27,38 +27,38 @@ ResuAI is an AI-driven toolkit to automate the recruitment process. It consists 
 
 ---
 
-## ⚙️ Installation
+### ⚙️ Installation
 
-**1. Clone the repository:**
+# 1. Clone the repository
 
 _git clone https://github.com/yourusername/resuai.git
 cd resuai_
 
-**2. Install required dependencies:**
+# 2. Install required dependencies:**
 
 Make sure you have Python 3.9+ installed.
 _pip install -r requirements.txt_
 
 _Note: You also need to install ffmpeg, portaudio, and Ollama._
 
-**3. Install & run Ollama with LLaMA3:**
-# Install Ollama if you haven't:
+# 3. Install & run Ollama with LLaMA3:**
+**Install Ollama if you haven't:**
 _https://ollama.com/download_
 
-# In your terminal:
+**In your terminal:**
 _ollama run llama3_
 
-**▶️ Running the Apps**
-# 1. Resume Screener
+# ▶️ Running the Apps
+**1. Resume Screener**
 
 _streamlit run enhanced_resu_ai.py_
 
-# 2. Voice Interview Agent
+**2. Voice Interview Agent**
 Make sure to modify the CSV path in voice_agent.py (line 13 & 14) to point to your candidates.csv.
 
 _streamlit run voice_agent.py_
 
-📁 Folder Structure
+# 📁 Folder Structure
 
 resuai/
 ├── enhanced_resu_ai.py          # Resume screening app
@@ -67,7 +67,7 @@ resuai/
 └── README.md
 
 
-**📌 Notes**
+# 📌 Notes
 This project assumes Ollama is running locally at _http://localhost:11434._
 
 Audio transcription is done using faster-whisper, and speech is generated with the TTS library.
