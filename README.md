@@ -25,6 +25,11 @@ ResuAI is an AI-driven toolkit to automate the recruitment process. It consists 
 - Validates answers and scores interviews using LLaMA via Ollama.
 - Saves full interview results to CSV.
 
+### 🧩 All-in-One Agent (`ResuAI_combined.py`)
+- Combines resume screening and voice interviews in a single, seamless Streamlit app.
+- Allows you to screen CVs, extract top candidates, and immediately conduct interviews — all from one interface.
+- No need to manually link files or move data between steps.
+
 ---
 
 ### ⚙️ Installation
@@ -49,11 +54,15 @@ _https://ollama.com/download_
 _ollama run llama3_
 
 # ▶️ Running the Apps
-**1. Resume Screener**
+**1. All-in-One Unified App**
+
+_streamlit run ResuAI_combined.py_
+
+**2. Resume Screener**
 
 _streamlit run enhanced_resu_ai.py_
 
-**2. Voice Interview Agent**
+**3. Voice Interview Agent**
 Make sure to modify the CSV path in voice_agent.py (line 13 & 14) to point to your candidates.csv.
 
 _streamlit run voice_agent.py_
@@ -63,6 +72,7 @@ _streamlit run voice_agent.py_
 resuai/
 ├── enhanced_resu_ai.py          # Resume screening app
 ├── resuai_with_voice_agent.py   # Voice interview agent
+├── ResuAI_combined.py           # Unified resume + interview app
 ├── requirements.txt             # Dependencies
 └── README.md
 
