@@ -36,7 +36,7 @@ ResuAI is an AI-driven toolkit to automate the recruitment process. It consists 
 
 # 1. Clone the repository
 
-_git clone https://github.com/yourusername/resuai.git
+_git clone https://github.com/rafeh-imtiaz/resuai.git
 cd resuai_
 
 # 2. Install required dependencies:**
