@@ -1,0 +1,31 @@
+# ResuAI - Voice Interview Agent & CV Shortlisting System
+# Install: pip install -r requirements.txt
+# Note: Also requires ffmpeg and portaudio installed on your system
+#   - Windows: choco install ffmpeg portaudio
+#   - macOS:   brew install ffmpeg portaudio
+#   - Linux:   sudo apt install ffmpeg portaudio19-dev
+# Note: Ollama must be running locally (https://ollama.com/download)
+#   Run: ollama pull llama3
+
+# --- Core ---
+streamlit>=1.32.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# --- CV Parsing ---
+PyMuPDF>=1.23.0          # fitz - PDF text extraction
+python-docx>=1.1.0       # docx - Word document parsing
+
+# --- ASR & TTS ---
+faster-whisper>=1.0.0    # WhisperModel - speech to text
+TTS>=0.22.0              # Coqui TTS - text to speech
+
+# --- Audio ---
+sounddevice>=0.4.6       # microphone recording & audio playback
+
+# --- LLM ---
+ollama>=0.1.8            # Ollama Python client (chat API)
+requests>=2.31.0         # HTTP calls to Ollama REST API
+
+# --- UI ---
+streamlit-aggrid>=0.3.4  # AgGrid interactive table component
